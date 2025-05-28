@@ -13,7 +13,7 @@ generateButton.addEventListener('click', async function() {
         d.style.display = 'none';
     });
 
-    window.alert('test');
+    // window.alert('test');
 
     window.print();
 
