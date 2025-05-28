@@ -1,0 +1,181 @@
+/* ************** Page Header ************** */
+
+.page-header-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.page-header {
+  font-size: 16px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* ************** Student Info ************** */
+
+.student-info {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+.student-info-input {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+/* ************** Input Section Headers and Flex ************** */
+
+.big-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-col {
+  width: 18rem;
+  margin-left: 2rem;
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.h1-left {
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.h1-right {
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.header-2 {
+  font-size: 12px;
+  width: 15rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/* ************** Input Section Content ************** */
+
+.number-input-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.number-input-description {
+  width: 17rem;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.number-input {
+  width: 1rem;
+  margin-top: auto;
+  margin-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  text-align: right;
+}
+
+.number-input-score {
+  width: 3rem;
+  font-size: 12px;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ************** Totals ************** */
+
+.total {
+  font-weight: 600;
+}
+
+/* ************** Error ************** */
+
+.error {
+  border: solid 1.6px red;
+  border-radius: 2px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+/* ************** Misc ************** */
+.page-break {
+  page-break-before: always;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.glossary-title {
+  text-align: center;
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+}
+
+.text-br {
+  height: 10px;
+}
+
+.small-br {
+  height: 8px;
+}
+
+.generate-button {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.back-button {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  height: 16px;
+  line-height: 16px;
+  background: rgb(240, 240, 240);
+  margin-left: 1rem;
+}
