@@ -13,8 +13,6 @@ generateButton.addEventListener('click', async function() {
         d.style.display = 'none';
     });
 
-    // window.alert('test');
-
     window.print();
 
     inputs.forEach(i => {
@@ -24,4 +22,10 @@ generateButton.addEventListener('click', async function() {
     disappearMe.forEach(d => {
         d.style.display = '';
     });
+});
+
+const resetButton = document.querySelector('#reset-button');
+
+resetButton.addEventListener('click', async function() {
+  document.getElementById("input-form").reset();
 });
