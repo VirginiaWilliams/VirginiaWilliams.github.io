@@ -13,6 +13,8 @@ generateButton.addEventListener('click', async function() {
         d.style.display = 'none';
     });
 
+    window.alert('test');
+
     window.print();
 
     inputs.forEach(i => {
