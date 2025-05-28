@@ -27,5 +27,6 @@ generateButton.addEventListener('click', async function() {
 const resetButton = document.querySelector('#reset-button');
 
 resetButton.addEventListener('click', async function() {
-  document.getElementById("input-form").reset();
+    console.log('reset');
+  document.querySelector("#input-form").reset();
 });
