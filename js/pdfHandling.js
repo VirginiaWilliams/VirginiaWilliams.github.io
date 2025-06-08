@@ -23,10 +23,3 @@ generateButton.addEventListener('click', async function() {
         d.style.display = '';
     });
 });
-
-const resetButton = document.querySelector('#reset-button');
-
-resetButton.addEventListener('click', async function() {
-    console.log('reset');
-  document.querySelector("#input-form").reset();
-});
