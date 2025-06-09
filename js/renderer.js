@@ -1,5 +1,6 @@
 function checkNumberValidity(ev) {
-    if (ev.target.value > ev.target.max) {
+    const isGreater = Math.max(ev.target.value, ev.target.max);
+    if (isGreater > ev.target.max) {
         ev.target.classList.add('error');
     }
     else if (ev.target.value < ev.target.min) {
