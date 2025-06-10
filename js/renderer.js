@@ -28,11 +28,55 @@ function checkTotalValidity(id, inputs) {
     }
 }
 
+function initialTotals() {
+    const languageInputs = document.querySelectorAll(".language");
+    let languageTotal = 0
+
+    languageInputs.forEach(input => {
+        languageTotal += Number(input.value);
+    });
+    const languageTotalDisplay = document.querySelector("#language-total-display");
+    languageTotalDisplay.value = languageTotal;
+
+    const readingInputs = document.querySelectorAll(".reading");
+    let readingTotal = 0
+
+    readingInputs.forEach(input => {
+        readingTotal += Number(input.value);
+    });
+    const readingTotalDisplay = document.querySelector("#reading-total-display");
+    readingTotalDisplay.value = readingTotal;
+
+    const mathInputs = document.querySelectorAll(".math");
+    let mathTotal = 0
+
+    mathInputs.forEach(input => {
+        mathTotal += Number(input.value);
+    });
+    const mathTotalDisplay = document.querySelector("#math-total-display");
+    mathTotalDisplay.value = mathTotal;
+}
+
 window.addEventListener("DOMContentLoaded", e => {
     var inputs = document.querySelectorAll('.number-input');
 
     inputs.forEach(async i => {
         i.addEventListener("input", checkNumberValidity);
+    });
+
+    document.querySelectorAll(".language").forEach((element, i) => {
+        element.addEventListener("input", () => {
+            const inputs = document.querySelectorAll(".language");
+            let total = 0
+
+            inputs.forEach(input => {
+                total += Number(input.value);
+            });
+
+            document.querySelector("#language-total-display").value = total;
+            
+            checkTotalValidity("#language-total-display", inputs);
+        })
     });
 
     // Event listeners
@@ -48,21 +92,6 @@ window.addEventListener("DOMContentLoaded", e => {
             document.querySelector("#reading-total-display").value = total;
 
             checkTotalValidity("#reading-total-display", inputs);
-        })
-    });
-
-    document.querySelectorAll(".language").forEach((element, i) => {
-        element.addEventListener("input", () => {
-            const inputs = document.querySelectorAll(".language");
-            let total = 0
-
-            inputs.forEach(input => {
-                total += Number(input.value);
-            });
-
-            document.querySelector("#language-total-display").value = total;
-            
-            checkTotalValidity("#language-total-display", inputs);
         })
     });
     
@@ -96,5 +125,8 @@ window.addEventListener("DOMContentLoaded", e => {
         inputs.forEach(input => {
             input.classList.remove('error');
         });
+        initialTotals();
     });
+
+    initialTotals();
 })
