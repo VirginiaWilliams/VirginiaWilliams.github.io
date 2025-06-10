@@ -62,6 +62,7 @@ window.addEventListener("DOMContentLoaded", e => {
 
     inputs.forEach(async i => {
         i.addEventListener("input", checkNumberValidity);
+        i.addEventListener('focus', () => i.select());
     });
 
     document.querySelectorAll(".language").forEach((element, i) => {
